@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DB363772588AFAE0053BACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB363762588AFAE0053BACE /* Assets.xcassets */; };
+		2DB3637E2588E5F30053BACE /* FastPriceNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB3637D2588E5F30053BACE /* FastPriceNetworking.swift */; };
 		2DDFF26E2587EA0C00A04575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFF26D2587EA0C00A04575 /* AppDelegate.swift */; };
 		2DDFF2702587EA0C00A04575 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFF26F2587EA0C00A04575 /* SceneDelegate.swift */; };
 		2DDFF2722587EA0C00A04575 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDFF2712587EA0C00A04575 /* ViewController.swift */; };
 		2DDFF2752587EA0C00A04575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFF2732587EA0C00A04575 /* Main.storyboard */; };
-		2DDFF2772587EA1100A04575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFF2762587EA1100A04575 /* Assets.xcassets */; };
 		2DDFF27A2587EA1100A04575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DDFF2782587EA1100A04575 /* LaunchScreen.storyboard */; };
+		2DE1F49B25894F4E004ED7BD /* FastPriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE1F49A25894F4E004ED7BD /* FastPriceModel.swift */; };
+		2DE1F49E25895428004ED7BD /* DecodedPriceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE1F49D25895428004ED7BD /* DecodedPriceData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DB363762588AFAE0053BACE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/AppIcons-2/Assets.xcassets"; sourceTree = "<group>"; };
+		2DB3637D2588E5F30053BACE /* FastPriceNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastPriceNetworking.swift; sourceTree = "<group>"; };
 		2DDFF26A2587EA0C00A04575 /* FastPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DDFF26D2587EA0C00A04575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DDFF26F2587EA0C00A04575 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2DDFF2712587EA0C00A04575 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2DDFF2742587EA0C00A04575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2DDFF2762587EA1100A04575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DDFF2792587EA1100A04575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DDFF27B2587EA1100A04575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE1F49A25894F4E004ED7BD /* FastPriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastPriceModel.swift; sourceTree = "<group>"; };
+		2DE1F49D25895428004ED7BD /* DecodedPriceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodedPriceData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DB3637A2588C3EA0053BACE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DDFF2782587EA1100A04575 /* LaunchScreen.storyboard */,
+				2DDFF2732587EA0C00A04575 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DB3637B2588C3FE0053BACE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DDFF2712587EA0C00A04575 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DB363802588E5F90053BACE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DB3637D2588E5F30053BACE /* FastPriceNetworking.swift */,
+				2DE1F49A25894F4E004ED7BD /* FastPriceModel.swift */,
+				2DE1F49D25895428004ED7BD /* DecodedPriceData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2DDFF2612587EA0C00A04575 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +91,10 @@
 			children = (
 				2DDFF26D2587EA0C00A04575 /* AppDelegate.swift */,
 				2DDFF26F2587EA0C00A04575 /* SceneDelegate.swift */,
-				2DDFF2712587EA0C00A04575 /* ViewController.swift */,
-				2DDFF2732587EA0C00A04575 /* Main.storyboard */,
-				2DDFF2762587EA1100A04575 /* Assets.xcassets */,
-				2DDFF2782587EA1100A04575 /* LaunchScreen.storyboard */,
+				2DB363802588E5F90053BACE /* Model */,
+				2DB3637B2588C3FE0053BACE /* Controller */,
+				2DB3637A2588C3EA0053BACE /* View */,
+				2DB363762588AFAE0053BACE /* Assets.xcassets */,
 				2DDFF27B2587EA1100A04575 /* Info.plist */,
 			);
 			path = FastPrice;
@@ -125,7 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DDFF27A2587EA1100A04575 /* LaunchScreen.storyboard in Resources */,
-				2DDFF2772587EA1100A04575 /* Assets.xcassets in Resources */,
+				2DB363772588AFAE0053BACE /* Assets.xcassets in Resources */,
 				2DDFF2752587EA0C00A04575 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DDFF2722587EA0C00A04575 /* ViewController.swift in Sources */,
+				2DE1F49B25894F4E004ED7BD /* FastPriceModel.swift in Sources */,
+				2DB3637E2588E5F30053BACE /* FastPriceNetworking.swift in Sources */,
 				2DDFF26E2587EA0C00A04575 /* AppDelegate.swift in Sources */,
+				2DE1F49E25895428004ED7BD /* DecodedPriceData.swift in Sources */,
 				2DDFF2702587EA0C00A04575 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
